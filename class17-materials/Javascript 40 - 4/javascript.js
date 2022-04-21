@@ -34,11 +34,14 @@ EJERCICIO 1
 
 // Array.prototype.filter()
 // 1. Filter the list of inventors for those who were born in the 1500's
-let fifteen = inventors.filter(inventor => inventor.year >= 1500 && inventor.year < 1600);
-console.table(fifteen);
 
-// const fifteen = inventors.filter(inventor => inventor.year >= 1500 && inventor.year < 1600);
-// console.table(fifteen);
+
+
+
+let fifteens = inventors.filter(inventor => inventor.year >= 1500 && inventor.year < 1600)
+console.table(fifteens)
+
+
 
 /*
 ======================================================
@@ -49,11 +52,15 @@ EJERCICIO 2
 // Array.prototype.map()
 // 2. Give us an array of the inventors first and last names
 
-const fullName = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
-console.log(fullName);
 
-// const fullNames = inventors.map(inventor => `${inventor.first}  ${inventor.last}`);
-// console.log(fullNames);
+
+
+
+let fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
+console.log(fullNames)
+
+
+
 
 /*
 ======================================================
@@ -63,12 +70,15 @@ EJERCICIO 3
 
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
-const sortByAge = inventors.sort((a, b) => a.year > b.year ? 1 : -1);
-console.table(sortByAge);
 
 
-// const ordered = inventors.sort((a, b) => a.year > b.year ? 1 : -1);
-// console.table(ordered);
+
+
+let birthdate = inventors.sort((a,b) => a.year-b.year)
+console.table(birthdate);
+
+
+
 
 /*
 ======================================================
@@ -78,15 +88,17 @@ EJERCICIO 4
 
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
-const ageSum = inventors.reduce((total, inventor) => {
-    return total + (inventor.passed - inventor.year);
-}, 0);
-console.log(ageSum);
 
-// const totalYears = inventors.reduce((total, inventor) => {
-//     return total + (inventor.passed - inventor.year);
-// }, 0);
-// console.log(totalYears);
+
+let allYears = inventors.reduce((total, inventor) => {
+    return total += (inventor.passed - inventor.year)
+}, 0)
+
+console.log(allYears)
+
+
+
+
 
 /*
 ======================================================
@@ -96,6 +108,13 @@ EJERCICIO 5
 
 // 5. Sort the inventors by years lived
 
+
+// let yearsLived = inventors.sort((a, b) => {
+    
+//     return oneGuy - twoGuy;
+// })
+
+// console.table(yearsLived)
 
 
 // const oldest = inventors.sort(function (a, b) {
@@ -129,9 +148,16 @@ EJERCICIO 7
 // 7. sort Exercise
 // Sort the people alphabetically by last name
 
-const alphabetical = inventors.sort((a, b) =>
-    a.last > b.last ? 1 : -1);
-console.table(alphabetical);
+
+let alphabeticalOrder = inventors.sort((a,b) => {
+    a.last.localeCompare()
+})
+
+console.table(alphabeticalOrder)
+
+// const alphabetical = inventors.sort((a, b) =>
+//     a.last > b.last ? 1 : -1);
+// console.table(alphabetical);
 
 // const alpha = people.sort((lastOne, nextOne) => {
 //     const [aLast, aFirst] = lastOne.split(', ');
