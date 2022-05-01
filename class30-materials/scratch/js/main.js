@@ -46,20 +46,117 @@ function gamePlay(square) {
 	if (currentPlayer === "x") {
 		document.querySelector(square).classList.add("exes");
 		document.querySelector(square).style.backgroundColor = "green";
-        checkWin()
+		checkWin();
 		changePlayer();
 	} else {
 		document.querySelector(square).classList.add("os");
 		document.querySelector(square).style.backgroundColor = "purple";
-        checkWin()
+		checkWin();
 		changePlayer();
 	}
 }
-t;
 // 5. Check out if the player won
 function checkWin() {
 	if (currentPlayer === "x") {
-        if ()
+		if (
+			document.querySelector("#a1").classList.contains("exes") &&
+			document.querySelector("#a2").classList.contains("exes") &&
+			document.querySelector("#a3").classList.contains("exes")
+		) {
+			document.querySelector(".winner").innerText = "Player X won!";
+		} else if (
+			document.querySelector("#a1").classList.contains("exes") &&
+			document.querySelector("#b1").classList.contains("exes") &&
+			document.querySelector("#c1").classList.contains("exes")
+		) {
+			document.querySelector(".winner").innerText = "Player X won!";
+		} else if (
+			document.querySelector("#b1").classList.contains("exes") &&
+			document.querySelector("#b2").classList.contains("exes") &&
+			document.querySelector("#b3").classList.contains("exes")
+		) {
+			document.querySelector(".winner").innerText = "Player X won!";
+		} else if (
+			document.querySelector("#c1").classList.contains("exes") &&
+			document.querySelector("#c2").classList.contains("exes") &&
+			document.querySelector("#c3").classList.contains("exes")
+		) {
+			document.querySelector(".winner").innerText = "Player X won!";
+		} else if (
+			document.querySelector("#a2").classList.contains("exes") &&
+			document.querySelector("#b2").classList.contains("exes") &&
+			document.querySelector("#c2").classList.contains("exes")
+		) {
+			document.querySelector(".winner").innerText = "Player X won!";
+		} else if (
+			document.querySelector("#a3").classList.contains("exes") &&
+			document.querySelector("#b3").classList.contains("exes") &&
+			document.querySelector("#c3").classList.contains("exes")
+		) {
+			document.querySelector(".winner").innerText = "Player X won!";
+		} else if (
+			document.querySelector("#a1").classList.contains("exes") &&
+			document.querySelector("#b2").classList.contains("exes") &&
+			document.querySelector("#c3").classList.contains("exes")
+		) {
+			document.querySelector(".winner").innerText = "Player X won!";
+		} else if (
+			document.querySelector("#c1").classList.contains("exes") &&
+			document.querySelector("#b2").classList.contains("exes") &&
+			document.querySelector("#a3").classList.contains("exes")
+		) {
+			document.querySelector(".winner").innerText = "Player X won!";
+		}
+	} else {
+		if (
+			document.querySelector("#a1").classList.contains("os") &&
+			document.querySelector("#a2").classList.contains("os") &&
+			document.querySelector("#a3").classList.contains("os")
+		) {
+			document.querySelector(".winner").innerText = "Player O won!";
+		} else if (
+			document.querySelector("#a1").classList.contains("os") &&
+			document.querySelector("#b1").classList.contains("os") &&
+			document.querySelector("#c1").classList.contains("os")
+		) {
+			document.querySelector(".winner").innerText = "Player O won!";
+		} else if (
+			document.querySelector("#b1").classList.contains("os") &&
+			document.querySelector("#b2").classList.contains("os") &&
+			document.querySelector("#b3").classList.contains("os")
+		) {
+			document.querySelector(".winner").innerText = "Player O won!";
+		} else if (
+			document.querySelector("#c1").classList.contains("os") &&
+			document.querySelector("#c2").classList.contains("os") &&
+			document.querySelector("#c3").classList.contains("os")
+		) {
+			document.querySelector(".winner").innerText = "Player O won!";
+		} else if (
+			document.querySelector("#a2").classList.contains("os") &&
+			document.querySelector("#b2").classList.contains("os") &&
+			document.querySelector("#c2").classList.contains("os")
+		) {
+			document.querySelector(".winner").innerText = "Player O won!";
+		} else if (
+			document.querySelector("#a3").classList.contains("os") &&
+			document.querySelector("#b3").classList.contains("os") &&
+			document.querySelector("#c3").classList.contains("os")
+		) {
+			document.querySelector(".winner").innerText = "Player O won!";
+		} else if (
+			document.querySelector("#a1").classList.contains("os") &&
+			document.querySelector("#b2").classList.contains("os") &&
+			document.querySelector("#c3").classList.contains("os")
+		) {
+			document.querySelector(".winner").innerText = "Player O won!";
+		} else if (
+			document.querySelector("#c1").classList.contains("os") &&
+			document.querySelector("#b2").classList.contains("os") &&
+			document.querySelector("#a3").classList.contains("os")
+		) {
+			document.querySelector(".winner").innerText = "Player O won!";
+		}
 	}
 }
 // 6. Reset everything
