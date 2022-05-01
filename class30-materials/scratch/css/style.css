@@ -12,6 +12,7 @@
 /*******************************************/
 body {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -38,6 +39,14 @@ body {
 
 .player {
 	font-size: 20px;
-	margin-bottom: 30px;
+	color: rgb(13, 19, 143);
+	padding: 30px;
 	text-align: center;
+}
+
+.winner {
+	font-size: 50px;
+	text-align: center;
+	padding: 30px;
+	color: rgb(171, 31, 31);
 }

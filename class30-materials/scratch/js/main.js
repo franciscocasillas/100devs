@@ -45,16 +45,17 @@ document.querySelector("#c3").addEventListener("click", () => {
 function gamePlay(square) {
 	if (currentPlayer === "x") {
 		document.querySelector(square).classList.add("exes");
-		document.querySelector(square).style.backgroundColor = "green";
+		document.querySelector(square).style.backgroundColor = "orange";
 		checkWin();
 		changePlayer();
 	} else {
 		document.querySelector(square).classList.add("os");
-		document.querySelector(square).style.backgroundColor = "purple";
+		document.querySelector(square).style.backgroundColor = "lightblue";
 		checkWin();
 		changePlayer();
 	}
 }
+
 // 5. Check out if the player won
 function checkWin() {
 	if (currentPlayer === "x") {
