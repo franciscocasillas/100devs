@@ -76,6 +76,9 @@ class Animal {
 	speak() {
 		console.log(`${this._name} makes a sound!`);
 	}
+	cry() {
+		console.log(`${this.name}: It's my party and I'll cry if I want to`);
+	}
 }
 
 //3. Create a dog class that inhertis from animal
@@ -93,6 +96,10 @@ class Dog extends Animal {
 	speak() {
 		super.speak();
 		console.log(`${this.name} barks loudly.`);
+	}
+	cry() {
+		super.cry();
+		console.log(`Cry if I want to, cry if I want to!`);
 	}
 }
 
@@ -112,6 +119,9 @@ class Cat extends Animal {
 		super.speak();
 		console.log(`${this._name} meows like crazy.`);
 	}
+	cry() {
+		console.log(`${this.name}: You would have to if it happend to you!`);
+	}
 }
 
 //9. Create two dogs and two cats
@@ -125,7 +135,7 @@ let badluck = new Cat("Bad Luck", "black");
 //10. Make all the animals speak!
 let farm = [sparky, duke, cata, badluck];
 for (a of farm) {
-	a.speak();
+	a.cry();
 }
 
 for (a of farm) {
