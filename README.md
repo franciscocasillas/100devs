@@ -15,12 +15,15 @@ Some of the exercises include creating a Tic Tac Toe game, a calculator and some
 <img width="500" alt="Screen Shot 2022-05-08 at 13 17 30" src="https://user-images.githubusercontent.com/17735860/167309766-df6e0ef0-e151-4396-8509-eaa02662aba3.png">
 
 As part of the bootcamp we have to practice our coding abilities by solving at least one CodeWars  challenge every day. I've created a Codewars Repisotry to share my solutions which you can check <a href="https://github.com/franciscocasillas/codewars">here</a>. 
-
+<br>
+<br>
 <img width="556" alt="Screen Shot 2022-05-17 at 19 56 40" src="https://user-images.githubusercontent.com/17735860/168935569-906f565d-b604-4b82-a220-098b3673599e.png">
 
 
 And I've used some of those problem's solutions to build some mini-apps that can be found <a href="https://github.com/franciscocasillas/mini-apps">here</a>. 
-
+<br>
+<br>
+<br>
 <a href="https://github.com/franciscocasillas/mini-apps"><img width="556" alt="Screen Shot 2022-05-08 at 13 25 41" src="https://user-images.githubusercontent.com/17735860/167310073-e6467bf1-9700-4af7-98c2-7eb0532ad839.png"></a>
 
 ## Lessons Learned: 
