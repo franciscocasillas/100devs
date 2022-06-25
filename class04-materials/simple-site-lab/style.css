@@ -1,0 +1,69 @@
+body,
+section {
+	background-color: rgb(141, 206, 229);
+}
+
+section {
+	border: solid 3px rgb(19, 211, 19);
+	margin: 15px;
+	padding: 15px 30px;
+	width: 500px;
+	height: 500px;
+}
+
+li,
+h2 {
+	font-family: sans-serif;
+}
+
+h1,
+nav {
+	text-align: center;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+	font-size: 12px;
+}
+
+a {
+	color: rgb(19, 211, 19);
+}
+
+h1,
+.main,
+h2,
+p {
+	color: white;
+}
+
+.main {
+	font-weight: 700;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 30px;
+	font-style: italic;
+}
+
+img {
+	float: right;
+	width: 28%;
+	padding: 13px;
+}
+
+p {
+	font-size: 13px;
+	font-weight: 0;
+	line-height: 1.5;
+}
+
+span {
+	color: gray;
+}
+
+footer {
+	margin-top: 30px;
+}
