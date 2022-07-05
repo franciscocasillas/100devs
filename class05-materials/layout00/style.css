@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+}
+
+header,
+footer {
+	height: 150px;
+	background-color: blue;
+	border: solid 3px black;
+	clear: both;
+}
+
+div {
+	border-collapse: collapse;
+}
+
+section {
+	float: left;
+	height: 400px;
+	width: 33.33334%;
+	background-color: green;
+	border: solid 3px black;
+}
