@@ -1,0 +1,34 @@
+* {
+	box-sizing: border-box;
+}
+
+header,
+footer {
+	height: 120px;
+	border: 1px solid black;
+	clear: both;
+}
+
+.top {
+	height: 180px;
+	border: 1px solid black;
+}
+
+.bottom {
+	height: 220px;
+	width: 100%;
+}
+
+.left {
+	float: left;
+	width: 40%;
+	border: 1px solid black;
+	height: 100%;
+}
+
+.right {
+	float: left;
+	width: 60%;
+	border: 1px solid black;
+	height: 100%;
+}
