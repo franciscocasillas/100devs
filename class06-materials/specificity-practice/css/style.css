@@ -1,7 +1,23 @@
 /* Please make "This is an ad..." blue, but make sure it is specific enough that you could add other h3's somewhere eles in the document. */
+section#rugratsWildThornberrysBestCrossOverAllTime > h2 + aside > h3 + p {
+	color: blue;
+}
 
 /* Please make "I like turtles." red */
+section + section#chunkyMilk > h2 {
+	color: red;
+}
 
 /* Please select "Hello, world!" with the highest level of specificity possible*/
+html
+	> body
+	> header.top
+	+ section#rugratsWildThornberrysBestCrossOverAllTime
+	> h2 {
+	color: pink;
+}
 
 /* Please select "Let's get down to business..." with the highest level of specificity possible */
+html > body > section + section#chunkyMilk > h2 + p.passTheRemote.turtles {
+	color: green;
+}
