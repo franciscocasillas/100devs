@@ -1,16 +1,16 @@
 /* Box Model Hack */
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
 }
 
 .clear {
@@ -22,21 +22,39 @@
 /*******************************************/
 
 body {
-
 }
 
+nav {
+	background-color: black;
+}
+ul {
+	display: flex;
+	list-style-type: none;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 10px;
+	margin: 0;
+}
+
+li {
+	display: inline-flex;
+	color: white;
+	padding: 0 5px;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
-
 }
 
 footer {
-
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+#logo {
+	height: 20px;
+}
