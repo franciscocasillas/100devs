@@ -25,26 +25,22 @@ body {
 }
 
 nav {
+	height: 35px;
+	line-height: 35px;
+	max-width: 100%;
 	background-color: black;
-}
-ul {
 	display: flex;
-	list-style-type: none;
-	align-items: center;
 	justify-content: space-between;
-	padding: 5px 10px;
-	margin: 0;
+	align-items: center;
+	padding: 0 20px;
 }
 
-li {
-	display: inline-flex;
-	color: white;
-	padding: 0 5px;
+nav * {
 }
 
-li a {
-	color: white;
+a {
 	text-decoration: none;
+	color: white;
 }
 
 /******************************************
@@ -61,7 +57,33 @@ footer {
 /*******************************************/
 
 #logo {
-	height: 20px;
+	filter: invert(100%);
+	vertical-align: center;
+	height: 32px;
+	padding: 3px 0;
+}
+
+.user {
+	height: 30px;
+	filter: invert(100%);
+}
+
+.userIcon {
+	height: 28px;
+	filter: invert(100%);
+}
+
+.sign-in {
+	background-color: black;
+	border: none;
+	height: 95%;
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.sign-in a {
 }
 
 .dropbtn {
@@ -97,8 +119,6 @@ footer {
 }
 
 .search-field {
-	width: 100%;
-	padding: 10px 35px 10px 15px;
 	border: none;
 	outline: none;
 }
@@ -114,4 +134,8 @@ footer {
 	width: 20px;
 	height: 20px;
 	object-fit: cover;
+}
+
+.search {
+	line-height: 32px;
 }
