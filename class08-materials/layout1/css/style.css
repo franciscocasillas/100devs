@@ -25,8 +25,8 @@ body {
 }
 
 nav {
-	height: 35px;
-	line-height: 35px;
+	height: 40px;
+	line-height: 40px;
 	max-width: 100%;
 	background-color: black;
 	display: flex;
@@ -43,13 +43,46 @@ a {
 	color: white;
 }
 
+main {
+	padding: 0 15px;
+}
+
+.top {
+	display: flex;
+}
+
+.top-left {
+	width: 50%;
+}
+
+.top-right {
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+}
+
+.top-right section {
+	width: 50%;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+
+main > header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 0;
 }
 
-footer {
+/******************************************
+/* MAIN
+/*******************************************/
+
+header > time {
+	font-size: 25px;
+	color: rgb(163, 163, 163);
 }
 
 /******************************************
@@ -95,6 +128,7 @@ footer {
 .dropdown {
 	position: relative;
 	display: inline-block;
+	width: 60px;
 }
 
 .dropdown-content {
