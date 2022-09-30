@@ -138,4 +138,5 @@ footer {
 
 .search {
 	line-height: 32px;
+	display: flex;
 }
