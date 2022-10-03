@@ -49,20 +49,37 @@ main {
 
 .top {
 	display: flex;
+	gap: 15px;
 }
 
-.top-left {
-	width: 50%;
-}
-
+.top-left,
 .top-right {
-	display: flex;
-	flex-wrap: wrap;
 	width: 50%;
 }
 
-.top-right section {
-	width: 50%;
+.top-right-top,
+.top-right-bottom {
+	display: flex;
+	gap: 15px;
+}
+
+.float {
+	position: relative;
+	top: -140px;
+	padding: 0 15px;
+	color: white;
+}
+
+.floatie {
+	color: white;
+	position: relative;
+	top: -110px;
+	padding: 0 20px;
+}
+
+.top-right-bottom {
+	position: relative;
+	top: -93px;
 }
 
 /******************************************
@@ -74,6 +91,10 @@ main > header {
 	align-items: center;
 	justify-content: space-between;
 	padding: 15px 0;
+}
+
+.covers {
+	width: 100%;
 }
 
 /******************************************
