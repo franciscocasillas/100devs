@@ -120,6 +120,11 @@ main > header {
 	width: 100%;
 }
 
+.bottom-bottom h3,
+p {
+	margin: 10px 0;
+}
+
 /******************************************
 /* MAIN
 /*******************************************/
@@ -220,5 +225,20 @@ header > time {
 }
 
 .bottom > header {
-	font-size: 30px;
+	font-size: 25px;
+}
+
+.red {
+	border-left: 3px solid red;
+	padding: 0 5px;
+}
+
+.blue {
+	border-left: 3px solid rgb(14, 143, 203);
+	padding: 0 5px;
+}
+
+.green {
+	border-left: 3px solid rgb(88, 197, 61);
+	padding: 0 5px;
 }
