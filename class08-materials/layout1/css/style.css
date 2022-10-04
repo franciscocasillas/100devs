@@ -99,8 +99,25 @@ main > header {
 
 .bottom {
 	position: relative;
-	top: -110px;
+	top: -160px;
 	padding: 0 15px;
+}
+
+.bottom header {
+	padding: 20px 0;
+}
+
+.bottom-bottom {
+	display: flex;
+	gap: 10px;
+}
+
+.bottom-bottom > section {
+	width: 33.333%;
+}
+
+.bottom-bottom img {
+	width: 100%;
 }
 
 /******************************************
