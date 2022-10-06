@@ -1,16 +1,16 @@
 /* Box Model Hack */
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
 }
 
 .clear {
@@ -22,21 +22,79 @@
 /*******************************************/
 
 body {
-
-}
-
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-header {
-
-}
-
-footer {
-
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-size: 14px;
 }
 
 /******************************************
-/* ADDITIONAL STYLES
+/* NAVBAR
 /*******************************************/
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	padding: 13px 0;
+	border: 0.1px solid rgb(230, 230, 230);
+	align-items: center;
+}
+
+nav a {
+	color: rgb(70, 101, 238);
+	text-decoration: none;
+	padding: 10px 0;
+}
+
+.right-nav a {
+	padding: 10px 10px;
+	font-weight: 600;
+}
+
+/******************************************
+/* DROPDOWN BUTTON
+/*******************************************/
+
+.dropbtn {
+	border: none;
+	background-color: white;
+	color: rgb(70, 101, 238);
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	background-color: rgb(247, 245, 245);
+	padding: 8px 8px;
+	min-width: 250px;
+	top: 20px;
+}
+
+.dropdown-content li {
+	padding: 10px 10px;
+	list-style-type: none;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/******************************************
+/* COMPONENTS
+/*******************************************/
+
+.logo {
+	height: 30px;
+}
+
+.arrow {
+	height: 10px;
+	color: rgb(70, 101, 238);
+}
