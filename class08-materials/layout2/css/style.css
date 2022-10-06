@@ -62,6 +62,10 @@ nav a {
 	cursor: pointer;
 }
 
+.dropbtn:hover {
+	color: rgb(0, 162, 255);
+}
+
 .dropdown {
 	position: relative;
 	display: inline-block;
@@ -80,6 +84,14 @@ nav a {
 .dropdown-content li {
 	padding: 10px 10px;
 	list-style-type: none;
+}
+
+.dropdown-content li:hover {
+	background-color: rgb(234, 232, 232);
+}
+
+.dropdown-content li a:hover {
+	color: green;
 }
 
 .dropdown:hover .dropdown-content {
