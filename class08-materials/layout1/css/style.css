@@ -53,6 +53,7 @@ main {
 .top-left,
 .top-right {
 	width: 50%;
+	position: relative;
 }
 
 .top-right-top,
@@ -62,8 +63,9 @@ main {
 }
 
 .float {
-	position: relative;
-	top: -140px;
+	position: absolute;
+	bottom: 210px;
+	right: 25px;
 	padding: 0 15px;
 	color: white;
 }
