@@ -144,6 +144,35 @@ nav a {
 }
 
 /******************************************
+/* MAIN
+/*******************************************/
+
+main {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 2% 15%;
+}
+
+.bottom-right {
+	width: 50%;
+}
+
+main img {
+	width: 50%;
+}
+
+.first-paragraph {
+	font-size: 40px;
+}
+
+.second-paragraph {
+	line-height: 2;
+}
+
+/******************************************
 /* COMPONENTS
 /*******************************************/
 
