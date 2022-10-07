@@ -50,6 +50,12 @@ nav a {
 	font-weight: 600;
 }
 
+.nav-left {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
 /******************************************
 /* DROPDOWN BUTTON
 /*******************************************/
@@ -58,7 +64,7 @@ nav a {
 	border: none;
 	background-color: white;
 	color: rgb(70, 101, 238);
-	font-weight: 500;
+	font-weight: 600;
 	cursor: pointer;
 }
 
@@ -96,6 +102,42 @@ nav a {
 
 .dropdown:hover .dropdown-content {
 	display: block;
+}
+
+/******************************************
+/* SEARCH BAR
+/*******************************************/
+
+.magnifying-glass {
+	height: 20px;
+}
+
+.container {
+	width: 200px;
+}
+
+.form {
+	display: flex;
+}
+
+.search-field {
+	width: 100%;
+	border: none;
+	outline: none;
+	background-color: rgb(233, 233, 233);
+	border-radius: 3px;
+	padding: 5px 10px;
+}
+
+.search-button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	margin-left: -33px;
+}
+
+.search-button img {
+	object-fit: cover;
 }
 
 /******************************************
