@@ -1,16 +1,16 @@
 /* Box Model Hack */
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
 }
 
 .clear {
@@ -18,24 +18,73 @@
 }
 
 /******************************************
-/* BASE STYLES
+/* NAV
 /*******************************************/
 
-body {
-
+nav {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	padding: 20px;
+	gap: 10px;
+	height: 100%;
 }
 
+nav header {
+	display: flex;
+	flex-direction: column;
+	gap: 9px;
+}
+
+.logo {
+	width: 65px;
+	margin-bottom: 5px;
+}
+
+.links {
+	text-decoration: none;
+	font-size: small;
+}
+
+.join {
+	color: orange;
+	font-weight: 600;
+}
+
+.login {
+	color: rgb(172, 167, 167);
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	color: rgb(172, 167, 167);
+	font-weight: 100;
+}
+
+ul li {
+	margin-bottom: 8px;
+}
+
+.searchie {
+	display: flex;
+	gap: 3px;
+	align-items: center;
+}
+
+.search {
+	filter: opacity(40%);
+	height: 15px;
+}
+
+.more {
+	margin-top: 15px;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
-}
-
-footer {
-
-}
 
 /******************************************
 /* ADDITIONAL STYLES
