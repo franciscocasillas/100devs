@@ -18,15 +18,31 @@
 }
 
 /******************************************
+/* 
+/*******************************************/
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+.uptown {
+	display: flex;
+	justify-content: center;
+}
+
+/******************************************
 /* NAV
 /*******************************************/
 
 nav {
-	position: fixed;
 	display: flex;
 	flex-direction: column;
-	width: 200px;
-	padding: 20px;
+	width: 12%;
+	padding: 15px;
 	gap: 10px;
 	height: 100%;
 }
@@ -56,14 +72,14 @@ nav header {
 	color: rgb(172, 167, 167);
 }
 
-ul {
+.mainNav {
 	list-style-type: none;
 	padding: 0;
 	color: rgb(172, 167, 167);
 	font-weight: 100;
 }
 
-ul li {
+.mainNav li {
 	margin-bottom: 8px;
 }
 
@@ -83,9 +99,111 @@ ul li {
 }
 
 /******************************************
-/* LAYOUT
+/* MAIN
 /*******************************************/
 
+main {
+	padding: 10px 0;
+	width: 43%;
+}
+
+h1,
+.mainp,
+.author {
+	margin: 3px 0;
+}
+
+.bold {
+	color: rgb(251, 187, 68);
+	font-weight: 600;
+}
+
+h1 {
+	margin-top: 5px;
+	line-height: 1;
+}
+
+.mainp {
+	color: rgb(172, 167, 167);
+	font-size: large;
+	line-height: 1;
+}
+
+.author {
+	font-size: smaller;
+	font-weight: 600;
+}
+
+.mainimg {
+	width: 100%;
+	padding: 5px 0;
+}
+
 /******************************************
-/* ADDITIONAL STYLES
+/* SECOND NAV
 /*******************************************/
+
+.secondNav {
+	width: 26%;
+	padding: 0 30px;
+	list-style-type: none;
+	margin: 0;
+}
+
+h2 {
+	font-size: 20px;
+	margin: 3px 0;
+	line-height: 1;
+}
+
+.underneath {
+	margin-bottom: 20px;
+	border-bottom: solid 0.2px rgb(212, 212, 212);
+	padding: 5px 0;
+}
+
+/******************************************
+/* DOWNTOWN
+/*******************************************/
+
+.downtown {
+	width: 69%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 12%;
+}
+
+h3 {
+	margin: 0 0 10px 0;
+	line-height: 1;
+}
+
+.downtownDown {
+	display: flex;
+	width: 100%;
+	gap: 35px;
+	border-top: 0.1px solid rgb(235, 235, 235);
+	padding: 25px 0;
+}
+
+.third {
+	display: flex;
+	flex-direction: column;
+	width: 33.3333%;
+	margin-top: 0;
+}
+
+.headerDown {
+	font-size: 25px;
+}
+
+time {
+	color: rgb(172, 167, 167);
+	font-size: smaller;
+}
+
+.paradown {
+	color: rgb(172, 167, 167);
+	font-size: 14px;
+	line-height: 1.3;
+}
