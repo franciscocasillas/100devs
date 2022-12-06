@@ -1,10 +1,13 @@
-document.querySelector('#check').addEventListener('click', check)
+document.querySelector("#check").addEventListener("click", check);
 
 function check() {
+	const day = document.querySelector("#day").value;
 
-  const day = document.querySelector('#day').value
-
-  //Conditionals go here
-
-
+	if (day === "Monday" || day === "Tuesday" || day === "Wednesday") {
+		alert("You suck!");
+	} else if (day === "Thursday") {
+		alert("Almost there!");
+	} else {
+		alert("Yayyyy!");
+	}
 }
