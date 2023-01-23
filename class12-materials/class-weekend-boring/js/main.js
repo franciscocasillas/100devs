@@ -5,7 +5,7 @@ function check() {
 
 	if (day === "Monday" || day === "Tuesday" || day === "Wednesday") {
 		alert("You suck!");
-	} else if (day === "Thursday") {
+	} else if (day === "Thursday" || day === "Friday") {
 		alert("Almost there!");
 	} else {
 		alert("Yayyyy!");
