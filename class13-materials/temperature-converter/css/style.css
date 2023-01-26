@@ -3,15 +3,21 @@
 /*******************************************/
 
 /* Box Model Hack */
-*{
-  box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 
-
+section {
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	justify-content: center;
+	align-items: center;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
