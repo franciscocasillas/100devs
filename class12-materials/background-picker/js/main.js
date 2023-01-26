@@ -1,24 +1,24 @@
-document.getElementById("purple").onclick = partyPurple;
-document.getElementById("green").onclick = partyGreen;
-document.getElementById("blue").onclick = partyBlue;
-document.getElementById("orange").onclick = partyOrange;
+document.querySelector("#purple").onclick = partyPurple;
+document.querySelector("#green").onclick = partyGreen;
+document.querySelector("#blue").onclick = partyBlue;
+document.querySelector("#orange").addEventListener("click", partyOrange);
 
 function partyPurple() {
-	document.querySelector("body").style.backgroundColor = "rgba(241,63,247,1)";
+	document.querySelector("body").style.backgroundColor = "purple";
 	document.querySelector("body").style.color = "white";
 }
 
 function partyGreen() {
-	document.querySelector("body").style.backgroundColor = "rgba(0,253,81,1)";
+	document.querySelector("body").style.backgroundColor = "green";
 	document.querySelector("body").style.color = "white";
 }
 
 function partyBlue() {
-	document.querySelector("body").style.backgroundColor = "rgba(0,254,255)";
+	document.querySelector("body").style.backgroundColor = "blue";
 	document.querySelector("body").style.color = "white";
 }
 
 function partyOrange() {
 	document.querySelector("body").style.backgroundColor = "orange";
-	document.querySelector("body").style.color = "blue";
+	document.querySelector("body").style.color = "white";
 }
