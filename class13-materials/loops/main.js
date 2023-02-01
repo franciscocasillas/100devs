@@ -22,3 +22,10 @@ for (i; i <= 10; i++) {
 		console.log(`${i} is odd`);
 	}
 }
+
+//INPUT VALIDATION
+let num = 1;
+
+while (num < 50 || num > 100) {
+	num = prompt("Give me a number, any number");
+}
