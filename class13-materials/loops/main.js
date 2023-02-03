@@ -36,3 +36,15 @@ let numb = prompt("Give me another number");
 for (let i = 1; i <= 10; i++) {
 	console.log(`${i} * ${numb} = ${i * numb}`);
 }
+
+//YES OR NO
+
+let txt;
+let result = false;
+while (result === false) {
+	txt = prompt("Drop a word");
+	if (txt === "yes" || txt === "no") {
+		result = true;
+	} else {
+	}
+}
