@@ -29,3 +29,10 @@ let num = 1;
 while (num < 50 || num > 100) {
 	num = prompt("Give me a number, any number");
 }
+
+//MULTIPLICATION TABLE
+let numb = prompt("Give me another number");
+
+for (let i = 1; i <= 10; i++) {
+	console.log(`${i} * ${numb} = ${i * numb}`);
+}
