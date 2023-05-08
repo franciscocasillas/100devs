@@ -36,12 +36,14 @@ function crazy(n1, n2, n3, n4) {
 	let result = n1 * n2;
 	if (result > 100) {
 		result = result + n3 + n4;
+		console.log(result);
 	} else if (result < 100) {
 		result = result - n3 - n4;
+		console.log(result);
 	} else {
 		result = (n1 * n2 * n3) % n4;
+		alert(result);
 	}
-	console.log(result);
 }
 
-crazy(5, 2, 1, 3);
+// crazy(5, 2, 1, 3);
