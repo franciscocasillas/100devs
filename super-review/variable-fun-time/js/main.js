@@ -9,19 +9,22 @@ num -= 10;
 console.log(num);
 //--- Medium
 //create a variable that holds a value from the input
+let numFromInput = Number(document.querySelector("input").value);
 
 //add 25 to that number
-function funLess() {
-	const fun = Number(document.querySelector("#danceDanceRevolution").value);
-	let funLes = fun + 25;
-	alert(funLes);
-	console.log(fun + funLes);
-}
+numFromInput += 25;
 
 //alert that number
+alert(numFromInput);
 
 //--- Hard
 //create a variable that holds the h1
-document.querySelector("h1").addEventListener("click", funLess);
+const t1 = document.querySelector("h1");
 
 //add an event listener to that element that console logs the sum of the two previous variables
+t1.addEventListener("click", addTwoNums);
+
+function addTwoNums() {
+	let sum = num + numFromInput;
+	console.log(sum);
+}
