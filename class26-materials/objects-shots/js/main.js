@@ -6,7 +6,7 @@ document.querySelector("button").addEventListener("click", getCocktail);
 
 function getCocktail() {
 	let cocktail = document.querySelector("input").value;
-	console.log(cocktail);
+	cocktail = cocktail.replaceAll(" ", "_");
 
 	fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${cocktail}`)
 		.then((res) => res.json())
