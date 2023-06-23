@@ -23,7 +23,5 @@ function getCocktail() {
 			//thumbnail
 			document.querySelector("img").src = data.drinks[0].strDrinkThumb;
 		})
-		.catch((err) => {
-			console.log(`error ${err}`);
-		});
+		.catch((err) => {});
 }
