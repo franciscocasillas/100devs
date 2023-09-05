@@ -7,13 +7,24 @@
 }
 
 img {
-    max-height: 60vh;
+    max-height: 75vh;
+    min-height: 75vh;
 }
 
 button {
     border: none;
-    padding: 5px 12px;
+    padding: 7px 12px;
     border-radius: 20px;
+}
+
+.getACat {
+    background-color: rgb(80, 213, 80);
+    color: white;
+}
+
+.getAGif {
+    background-color: rgb(142, 169, 239);
+    color: white;
 }
 
 
