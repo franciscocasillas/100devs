@@ -7,6 +7,7 @@ function showACat(){
             console.log(data)
         })
 
+    document.querySelector('.catPic').style.display = 'none'
     document.querySelector("h2").style.display = 'block'
     document.querySelector("h2").innerText = "Loading image..."
     document.querySelector('.catPic').src = ''
@@ -17,6 +18,7 @@ document.querySelector(".catPic").addEventListener("load", hideLoading)
 
 function hideLoading(){
     document.querySelector("h2").style.display = 'none'
+    document.querySelector('.catPic').style.display = 'block'
 }
 
 document.querySelector('.getAGif').addEventListener("click", showAGif)
@@ -28,6 +30,7 @@ function showAGif(){
             console.log(data)
         })
 
+    document.querySelector('.catPic').style.display = 'none'
     document.querySelector('h2').style.display = 'block'    
     document.querySelector("h2").innerText = "Loading GIF..."
     document.querySelector('.catPic').src = ''

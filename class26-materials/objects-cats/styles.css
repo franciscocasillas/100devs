@@ -4,11 +4,13 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    max-height: 50vh;
 }
 
 img {
-    max-height: 75vh;
-    min-height: 75vh;
+    max-height: 70vh;
+    min-height: 70vh;
+    display: none;
 }
 
 button {
@@ -27,5 +29,12 @@ button {
     color: white;
 }
 
+h2 {
+    display: none;
+}
+
+h3 {
+    font-size: 12px;
+}
 
 
