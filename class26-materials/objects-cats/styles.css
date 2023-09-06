@@ -31,10 +31,32 @@ button {
 
 h2 {
     display: none;
+    animation: animatedHeading 2s linear infinite;
 }
 
 h3 {
     font-size: 12px;
 }
+
+/* Animation */
+
+@keyframes animatedHeading {
+    0% {
+        color: rgb(203, 239, 94);
+    }
+    25% {
+        color: pink;
+    }
+    50% {
+        color: rgb(103, 142, 219);
+    }
+    75% {
+        color: rgb(232, 138, 204);
+    }
+    100% {
+        color: rgb(203, 239, 94)
+    }
+}
+
 
 
