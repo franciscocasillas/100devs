@@ -8,7 +8,9 @@ function getFetch() {
 	fetch(url)
 		.then((res) => res.json())
 		.then((data) => {
-			console.log(data.subclasses.length);
+			console.log(data);
+			document.querySelector("h2").innerText = data.name;
+			document.querySelector("span").innerText = data.classes[0].name;
 			for (let i = 0; i < data.subclasses.length; i++) {
 				const ul = document.querySelector("ul");
 				const li = document.createElement("li");
