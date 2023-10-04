@@ -4,7 +4,7 @@ document.querySelector("button").addEventListener("click", getFetch);
 function getFetch() {
 	const choice = document.querySelector("input").value;
 	const url = `https://openlibrary.org/isbn/${choice}.json`;
-	const imgurl = `https://covers.openlibrary.org/b/isbn/${choice}-L.jpg`;
+	const imgurl = `https://covers.openlibrary.org/b/isbn/${choice}-M.jpg`;
 
 	fetch(url)
 		.then((res) => res.json()) //
