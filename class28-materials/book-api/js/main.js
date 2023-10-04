@@ -9,8 +9,8 @@ function getFetch() {
 	fetch(url)
 		.then((res) => res.json()) //
 		.then((data) => {
-			console.log(data.title);
-			document.querySelector("h2").innerText = data.title;
+			localStorage.setItem("book", data.title);
+			document.querySelector("h2").innerText = localStorage.getItem("book");
 			document.querySelector("img").src = imgurl;
 		})
 		.catch((err) => {
