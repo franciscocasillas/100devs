@@ -1,54 +1,51 @@
 //Arrays
 //Your pokemon party order which is a list of pokemon has been leaked to Misty. Please create a function that reverses your list and prints it to the console.
+
 let pokemonParty = [
-	"Pikachu",
-	"Bulbasaur",
-	"Pidgey",
+	"Snorlax",
+	"Charizard",
 	"Butterfree",
-	"Kanghaskan",
-	"Torracat",
+	"Pidgeot",
+	"Clefable",
+	"Arcanine",
+	"Muk",
 ];
 
-function reverseAndShow() {
-	console.log(pokemonParty.reverse());
+function reversePokemonParty() {
+	let reversedPokemonParty = pokemonParty.reverse();
+	console.log(reversedPokemonParty);
 }
-
-reverseAndShow();
 
 //Given two integer arrays a, b, both of length >= 1, create a program that returns true if the sum of the squares of each element in a is strictly greater than the sum of the cubes of each element in b.
 
-function crazy(a, b) {
-	let aSum = a.reduce((sum, x) => sum + x ** 2);
-	let bSum = b.reduce((sum, x) => sum + x ** 3);
-	if (aSum > bSum) {
-		console.log(true);
+function comparison(arrayOfSquares, arrayOfCubes) {
+	if (sumOfSquares(arrayOfSquares) > sumOfCubes(arrayOfCubes)) {
+		return true;
+	} else {
+		return false;
 	}
 }
 
-crazy([9, 3, 8], [1, 1, 2]);
+function sumOfSquares(arr) {
+	return arr.reduce((acc, el) => acc + el ** 2);
+}
+
+function sumOfCubes(arr) {
+	return arr.reduce((acc, el) => acc + el ** 3);
+}
 
 //Return a new array consisting of elements which are multiple of their own index in input array (length > 1).
 // Some cases:
 // [22, -6, 32, 82, 9, 25] =>  [-6, 32, 25]
 // [68, -1, 1, -7, 10, 10] => [-1, 10]
 
-function byIndex(a) {
-	let multiples = [];
-	for (let i = 0; i < a.length; i++) {
-		if (a[i] % i === 0) {
-			multiples.push(a[i]);
-		}
-	}
-	console.log(multiples);
+function filterMultiplesOfIndex(arr) {
+	let multiplesOfIndex = arr.filter((element, index) => element % index === 0);
+	console.log(multiplesOfIndex);
 }
-
-byIndex([22, -6, 32, 82, 9, 25]);
 
 //Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.Return your answer as a number.
 
-function inte(a) {
-	let sum = a.reduce((sum, x) => +sum + +x);
-	console.log(sum);
+function sumNumbers(arr) {
+	console.log(arr.reduce((acc, el) => acc + Number(el)));
 }
-
-inte(["1", "3", 2, "5", "7"]);
