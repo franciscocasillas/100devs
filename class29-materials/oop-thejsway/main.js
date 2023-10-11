@@ -79,3 +79,28 @@ glacius.attack(monster);
 
 console.log(aurora.describe());
 console.log(glacius.describe());
+
+// Exercise 3
+class Account {
+	constructor(name, credit) {
+		this.name = name;
+		this.balance = 0;
+		this.credit = function (amount) {
+			this.balance += amount;
+		};
+	}
+	describe() {
+		console.log(`Account owner: ${this.name}, Balance: ${this.balance}`);
+	}
+}
+
+const sean = new Account("Sean", 300);
+const brad = new Account("Brad", 700);
+const georges = new Account("Georges", 50000);
+
+const accounts = [sean, brad, georges];
+
+accounts.forEach((account) => {
+	account.balance += 1000;
+	account.describe();
+});
