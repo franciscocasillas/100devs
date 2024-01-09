@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 const PORT = 8000;
+
+app.use(cors());
 
 const rappers = {
 	"21 savage": {
@@ -34,6 +37,6 @@ app.get("/api/:rapperName", (request, response) => {
 	response.json(rappers);
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
 	console.log(`Your PORT is running inside of port ${PORT}`);
 });
